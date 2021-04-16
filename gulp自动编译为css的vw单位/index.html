@@ -4,73 +4,113 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>gulp自动编译为css的vw单位 | 淡泊以明志,宁静以致远</title>
-    <meta name="generator" content="VuePress 1.7.1">
-    <link rel="icon" href="/blog/app.png">
-    <link rel="apple-touch-icon" href="/blog/app.png">
-    <link rel="manifest" href="/blog/manifest.json">
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/app.png">
+    <link rel="apple-touch-icon" href="/app.png">
+    <link rel="manifest" href="/manifest.json">
     <meta name="description" content="淡泊以明志,宁静以致远, vuepress 文档,前端,vur,react,flutter">
     
-    <link rel="preload" href="/blog/assets/css/0.styles.e1db310f.css" as="style"><link rel="preload" href="/blog/assets/js/app.cca9e510.js" as="script"><link rel="preload" href="/blog/assets/js/2.1658847e.js" as="script"><link rel="preload" href="/blog/assets/js/21.7dd7a62b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.395ffda7.js"><link rel="prefetch" href="/blog/assets/js/11.a6394de7.js"><link rel="prefetch" href="/blog/assets/js/12.75ea21e2.js"><link rel="prefetch" href="/blog/assets/js/13.5159114f.js"><link rel="prefetch" href="/blog/assets/js/14.36c90d18.js"><link rel="prefetch" href="/blog/assets/js/15.a2d6d880.js"><link rel="prefetch" href="/blog/assets/js/16.eded27b9.js"><link rel="prefetch" href="/blog/assets/js/17.04e8b346.js"><link rel="prefetch" href="/blog/assets/js/18.ad7800e0.js"><link rel="prefetch" href="/blog/assets/js/19.82f7e0d0.js"><link rel="prefetch" href="/blog/assets/js/20.76951119.js"><link rel="prefetch" href="/blog/assets/js/22.ccd23cf8.js"><link rel="prefetch" href="/blog/assets/js/23.03a9c459.js"><link rel="prefetch" href="/blog/assets/js/24.65ed47b6.js"><link rel="prefetch" href="/blog/assets/js/25.2c465d39.js"><link rel="prefetch" href="/blog/assets/js/26.cb237e94.js"><link rel="prefetch" href="/blog/assets/js/27.aba13893.js"><link rel="prefetch" href="/blog/assets/js/28.ad95f24a.js"><link rel="prefetch" href="/blog/assets/js/3.967cd9bd.js"><link rel="prefetch" href="/blog/assets/js/4.520b9b2a.js"><link rel="prefetch" href="/blog/assets/js/5.a90b9ca3.js"><link rel="prefetch" href="/blog/assets/js/6.b7bf3306.js"><link rel="prefetch" href="/blog/assets/js/7.07270828.js"><link rel="prefetch" href="/blog/assets/js/8.3c926db6.js"><link rel="prefetch" href="/blog/assets/js/9.22f82031.js">
-    <link rel="stylesheet" href="/blog/assets/css/0.styles.e1db310f.css">
+    <link rel="preload" href="/assets/css/0.styles.5b6810cc.css" as="style"><link rel="preload" href="/assets/js/app.8118f43a.js" as="script"><link rel="preload" href="/assets/js/2.2f95f5e8.js" as="script"><link rel="preload" href="/assets/js/22.8fab77d8.js" as="script"><link rel="prefetch" href="/assets/js/10.4782b4c9.js"><link rel="prefetch" href="/assets/js/11.edd2bd8b.js"><link rel="prefetch" href="/assets/js/12.34712092.js"><link rel="prefetch" href="/assets/js/13.c9c52265.js"><link rel="prefetch" href="/assets/js/14.70d77ad1.js"><link rel="prefetch" href="/assets/js/15.f6c2b637.js"><link rel="prefetch" href="/assets/js/16.f45e237e.js"><link rel="prefetch" href="/assets/js/17.bc69d742.js"><link rel="prefetch" href="/assets/js/18.e5ae62f8.js"><link rel="prefetch" href="/assets/js/19.4d7e7a14.js"><link rel="prefetch" href="/assets/js/20.335ab32f.js"><link rel="prefetch" href="/assets/js/21.b5fe2759.js"><link rel="prefetch" href="/assets/js/23.f24995a6.js"><link rel="prefetch" href="/assets/js/24.aa8fa958.js"><link rel="prefetch" href="/assets/js/25.189c46c0.js"><link rel="prefetch" href="/assets/js/26.eefc2b83.js"><link rel="prefetch" href="/assets/js/27.2562e865.js"><link rel="prefetch" href="/assets/js/28.d6504828.js"><link rel="prefetch" href="/assets/js/29.9bb4fd7f.js"><link rel="prefetch" href="/assets/js/3.d4149a10.js"><link rel="prefetch" href="/assets/js/4.f4d8ce8f.js"><link rel="prefetch" href="/assets/js/5.f88c4a2d.js"><link rel="prefetch" href="/assets/js/6.bad35625.js"><link rel="prefetch" href="/assets/js/7.3bbcc15f.js"><link rel="prefetch" href="/assets/js/8.d2ed5c6d.js"><link rel="prefetch" href="/assets/js/9.d16061b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5b6810cc.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">淡泊以明志,宁静以致远</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/guide/" class="nav-link">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">淡泊以明志,宁静以致远</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
   最新
 </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           js笔记
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/常用方法/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/常用方法/" class="nav-link">
   常用方法
-</a></li><li class="dropdown-subitem"><a href="/blog/gulp运行报错解决方案/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/gulp运行报错解决方案/" class="nav-link">
   gulp运行报错解决方案
-</a></li><li class="dropdown-subitem"><a href="/blog/使用gulp把文件上传到服务器/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/使用gulp把文件上传到服务器/" class="nav-link">
   使用gulp把文件上传到服务器
-</a></li><li class="dropdown-subitem"><a href="/blog/gulp自动编译为css的vw单位/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-subitem"><a href="/gulp自动编译为css的vw单位/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
   gulp自动编译为css的vw单位
 </a></li></ul></li><li class="dropdown-item"><h4>
           项目搭建
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/ant-design-vue项目搭建/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ant-design-vue项目搭建/" class="nav-link">
   ant-design-vue项目搭建
-</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/postcss/" class="nav-link">
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/postcss/" class="nav-link">
   插件
-</a></div><div class="nav-item"><a href="/blog/VueCLI2.x/" class="nav-link">
-  常用框架
-</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="常用框架" class="dropdown-title"><span class="title">常用框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="常用框架" class="mobile-dropdown-title"><span class="title">常用框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VueCLI2.x/" class="nav-link">
+  VueCLI2.x
+</a></li><li class="dropdown-subitem"><a href="/VueCLI3.x/" class="nav-link">
+  VueCLI3.x
+</a></li><li class="dropdown-subitem"><a href="/VueCLI4.x/" class="nav-link">
+  VueCLI4.x
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/搭建本地开发环境/" class="nav-link">
+  搭建本地开发环境
+</a></li><li class="dropdown-subitem"><a href="/修改配置项/" class="nav-link">
+  修改配置项
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Flutter
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/编辑器配置/" class="nav-link">
+  编辑器配置
+</a></li><li class="dropdown-subitem"><a href="/创建一个Flutter应用/" class="nav-link">
+  创建一个Flutter应用
+</a></li><li class="dropdown-subitem"><a href="/环境搭建/" class="nav-link">
+  环境搭建
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           前端
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/webExe/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webExe/" class="nav-link">
   常用软件
-</a></li><li class="dropdown-subitem"><a href="/blog/webPlugin/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/webPlugin/" class="nav-link">
   常用插件
 </a></li></ul></li></ul></div></div> <a href="https://github.com/vs2pk0/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
-    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/guide/" class="nav-link">
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
   最新
 </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           js笔记
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/常用方法/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/常用方法/" class="nav-link">
   常用方法
-</a></li><li class="dropdown-subitem"><a href="/blog/gulp运行报错解决方案/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/gulp运行报错解决方案/" class="nav-link">
   gulp运行报错解决方案
-</a></li><li class="dropdown-subitem"><a href="/blog/使用gulp把文件上传到服务器/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/使用gulp把文件上传到服务器/" class="nav-link">
   使用gulp把文件上传到服务器
-</a></li><li class="dropdown-subitem"><a href="/blog/gulp自动编译为css的vw单位/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-subitem"><a href="/gulp自动编译为css的vw单位/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
   gulp自动编译为css的vw单位
 </a></li></ul></li><li class="dropdown-item"><h4>
           项目搭建
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/ant-design-vue项目搭建/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ant-design-vue项目搭建/" class="nav-link">
   ant-design-vue项目搭建
-</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/postcss/" class="nav-link">
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/postcss/" class="nav-link">
   插件
-</a></div><div class="nav-item"><a href="/blog/VueCLI2.x/" class="nav-link">
-  常用框架
-</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="常用框架" class="dropdown-title"><span class="title">常用框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="常用框架" class="mobile-dropdown-title"><span class="title">常用框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VueCLI2.x/" class="nav-link">
+  VueCLI2.x
+</a></li><li class="dropdown-subitem"><a href="/VueCLI3.x/" class="nav-link">
+  VueCLI3.x
+</a></li><li class="dropdown-subitem"><a href="/VueCLI4.x/" class="nav-link">
+  VueCLI4.x
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/搭建本地开发环境/" class="nav-link">
+  搭建本地开发环境
+</a></li><li class="dropdown-subitem"><a href="/修改配置项/" class="nav-link">
+  修改配置项
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Flutter
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/编辑器配置/" class="nav-link">
+  编辑器配置
+</a></li><li class="dropdown-subitem"><a href="/创建一个Flutter应用/" class="nav-link">
+  创建一个Flutter应用
+</a></li><li class="dropdown-subitem"><a href="/环境搭建/" class="nav-link">
+  环境搭建
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           前端
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/webExe/" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webExe/" class="nav-link">
   常用软件
-</a></li><li class="dropdown-subitem"><a href="/blog/webPlugin/" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/webPlugin/" class="nav-link">
   常用插件
 </a></li></ul></li></ul></div></div> <a href="https://github.com/vs2pk0/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
-    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/常用方法/" class="sidebar-link">常用方法</a></li><li><a href="/blog/gulp运行报错解决方案/" class="sidebar-link">gulp运行报错解决方案</a></li><li><a href="/blog/使用gulp把文件上传到服务器/" class="sidebar-link">使用gulp把文件上传到服务器</a></li><li><a href="/blog/gulp自动编译为css的vw单位/" aria-current="page" class="active sidebar-link">gulp自动编译为css的vw单位</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/gulp自动编译为css的vw单位/#解决-移动端适配的问题-px-to-vw" class="sidebar-link">解决 移动端适配的问题，px to vw</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目搭建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/ant-design-vue项目搭建/" class="sidebar-link">ant-design-vue项目搭建</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="解决-移动端适配的问题-px-to-vw"><a href="#解决-移动端适配的问题-px-to-vw" class="header-anchor">#</a> 解决 移动端适配的问题，px to vw</h2> <ul><li><p>新建 gulpfile.js 文件</p></li> <li><p>安装需要的插件</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code> nvm install <span class="token operator">--</span>save<span class="token operator">-</span>dev autoprefixer gulp@<span class="token number">3.9</span><span class="token number">.1</span> gulp<span class="token operator">-</span>postcss postcss<span class="token operator">-</span>px<span class="token operator">-</span>to<span class="token operator">-</span>viewport
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/常用方法/" class="sidebar-link">常用方法</a></li><li><a href="/gulp运行报错解决方案/" class="sidebar-link">gulp运行报错解决方案</a></li><li><a href="/使用gulp把文件上传到服务器/" class="sidebar-link">使用gulp把文件上传到服务器</a></li><li><a href="/gulp自动编译为css的vw单位/" aria-current="page" class="active sidebar-link">gulp自动编译为css的vw单位</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/gulp自动编译为css的vw单位/#解决-移动端适配的问题-px-to-vw" class="sidebar-link">解决 移动端适配的问题，px to vw</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目搭建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ant-design-vue项目搭建/" class="sidebar-link">ant-design-vue项目搭建</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="解决-移动端适配的问题-px-to-vw"><a href="#解决-移动端适配的问题-px-to-vw" class="header-anchor">#</a> 解决 移动端适配的问题，px to vw</h2> <ul><li><p>新建 gulpfile.js 文件</p></li> <li><p>安装需要的插件</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code> nvm install <span class="token operator">--</span>save<span class="token operator">-</span>dev autoprefixer gulp@<span class="token number">3.9</span><span class="token number">.1</span> gulp<span class="token operator">-</span>postcss postcss<span class="token operator">-</span>px<span class="token operator">-</span>to<span class="token operator">-</span>viewport
 </code></pre></div><ul><li>设置 gulpfile.js<a href="https://www.cnblogs.com/zhangzhicheng/p/8910624.html" target="_blank" rel="noopener noreferrer">原文<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> postcss <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-postcss&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;autoprefixer&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -101,13 +141,13 @@ watcher<span class="token punctuation">.</span><span class="token function">on</
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/vs2pk0/blog/edit/master/docs/笔记/gulp自动编译为css的vw单位.md" target="_blank" rel="noopener noreferrer">编辑文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
-      <a href="/blog/使用gulp把文件上传到服务器/" class="prev">
+      <a href="/使用gulp把文件上传到服务器/" class="prev">
         使用gulp把文件上传到服务器
-      </a></span> <span class="next"><a href="/blog/ant-design-vue项目搭建/">
+      </a></span> <span class="next"><a href="/ant-design-vue项目搭建/">
         ant-design-vue项目搭建
       </a>
       →
-    </span></p></div> </main></div><div class="global-ui"><div class="my-loader center" style="display:none;" data-v-1744159c><div class="my-loader-circle" data-v-1744159c></div></div><div class="my-popup" style="display:none;" data-v-0cb184d3><div class="my-popup-container" data-v-0cb184d3><div class="my-popup-exit" data-v-0cb184d3></div> <img src="" alt data-v-0cb184d3></div></div><div></div></div></div>
-    <script src="/blog/assets/js/app.cca9e510.js" defer></script><script src="/blog/assets/js/2.1658847e.js" defer></script><script src="/blog/assets/js/21.7dd7a62b.js" defer></script>
+    </span></p></div> </main></div><div class="global-ui"><div class="my-loader center" style="display:none;" data-v-1744159c><div class="my-loader-circle" data-v-1744159c></div></div><div class="my-popup" style="display:none;" data-v-5f98aac3><div class="my-popup-container" data-v-5f98aac3><div class="my-popup-exit" data-v-5f98aac3></div> <img src="" alt data-v-5f98aac3></div></div><div></div></div></div>
+    <script src="/assets/js/app.8118f43a.js" defer></script><script src="/assets/js/2.2f95f5e8.js" defer></script><script src="/assets/js/22.8fab77d8.js" defer></script>
   </body>
 </html>
